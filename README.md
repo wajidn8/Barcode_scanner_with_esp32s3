@@ -3,12 +3,12 @@ barcode scanner using esp32s3 and printing it in serial monitor (esp idf framewo
 
 
 steps to compile and flash:
-s1:open esp idf
-s2:select target board (esp32s3)
-s3:create project 
-s4:build the project
-s5:flash to esp32s3
-s6:monitor 
+s1:open esp idf;
+s2:select target board (esp32s3);
+s3:create project;
+s4:build the project;
+s5:flash to esp32s3;
+s6:monitor;
 
 o/p: gives the barcode decode o/p
 
