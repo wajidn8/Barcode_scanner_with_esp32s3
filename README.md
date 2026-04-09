@@ -1,19 +1,44 @@
-# Barcode_scanner_with_esp32s3
-barcode scanner using esp32s3 and printing it in serial monitor (esp idf framework)
+# ESP32-S3 USB Barcode Scanner using ESP-IDF
 
+A barcode scanner project built using **ESP32-S3** in **ESP-IDF framework**.  
+The scanner is connected through **USB D+ and D- pins**, and decoded barcode data is printed to the **serial monitor**.
 
-steps to compile and flash:
-s1:open esp idf;
-s2:select target board (esp32s3);
-s3:create project;
-s4:build the project;
-s5:flash to esp32s3;
-s6:monitor;
+## Features
+- USB barcode scanner interface
+- ESP32-S3 support
+- ESP-IDF framework
+- Real-time barcode decoding
+- Serial monitor output
+- Plug and play USB connection
 
-o/p: gives the barcode decode o/p
+## Hardware Connections
+### Barcode Scanner → ESP32-S3
+- D+ → GPIO 20
+- D- → GPIO 19
+- VCC → External 5V
+- GND → Common Ground
 
-esp32 s3:
-gpio 19,20 connected to d+,d- of barcode scanner
-vcc,gnd of barcode scanner is connected to external 5v supply
+ESP32-S3 is connected to PC/laptop through USB.
 
-esp32s3 is connected to pc/lap.
+## Steps to Build and Flash
+1. Open ESP-IDF
+2. Select target board: ESP32-S3
+3. Create/open project
+4. Build project
+5. Flash to ESP32-S3
+6. Open serial monitor
+
+## Output
+Decoded barcode data is printed in serial monitor.
+
+Example:
+```text
+Decoded Barcode: 8901234567890
+```
+
+## Applications
+- Inventory systems
+- POS billing machines
+- Smart warehouse
+- Embedded automation
+- Industrial scanners
